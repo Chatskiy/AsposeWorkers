@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C8009466-9E26-4F35-9A3D-3387B40703FB}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Workers</RootNamespace>
+    <AssemblyName>Workers</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Enums\WorkerType.cs" />
+    <Compile Include="Helprers\WorkerHelper.cs" />
+    <Compile Include="Models\Employee.cs" />
+    <Compile Include="Models\Interfaces\ITopWorker.cs" />
+    <Compile Include="Models\Interfaces\IWorker.cs" />
+    <Compile Include="Models\Manager.cs" />
+    <Compile Include="Models\Sales.cs" />
+    <Compile Include="Models\TopWorker.cs" />
+    <Compile Include="Models\Worker.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\CalculatorService.cs" />
+    <Compile Include="Services\Calculators\BaseWorkerCalculator.cs" />
+    <Compile Include="Services\Calculators\EmployeeCalculator.cs" />
+    <Compile Include="Services\Calculators\Interfaces\ISalaryCalculator.cs" />
+    <Compile Include="Services\Calculators\Interfaces\ITopWorkerSalaryCalculator.cs" />
+    <Compile Include="Services\Calculators\ManagerCalculator.cs" />
+    <Compile Include="Services\Calculators\SalesCalculator.cs" />
+    <Compile Include="Services\Calculators\TopWorkerCalculator.cs" />
+    <Compile Include="Services\Factories\WorkerFactory.cs" />
+    <Compile Include="Services\Factories\SalaryCalculatorFactory.cs" />
+    <Compile Include="Services\Interfaces\ICalculatorService.cs" />
+    <Compile Include="Services\Interfaces\IWorkerService.cs" />
+    <Compile Include="Services\Interfaces\IWorkersStorage.cs" />
+    <Compile Include="Services\WorkerService.cs" />
+    <Compile Include="Services\WorkersStorage.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
