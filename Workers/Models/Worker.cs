@@ -7,7 +7,7 @@ namespace Workers.Models
 {
     public abstract class Worker : IWorker
     {
-        private uint _id = 0;
+        private uint _id;
 
         private readonly string _name;
 

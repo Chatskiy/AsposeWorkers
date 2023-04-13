@@ -43,7 +43,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Enums\WorkerType.cs" />
-    <Compile Include="Helprers\WorkerHelper.cs" />
+    <Compile Include="Helpers\WorkerHelper.cs" />
     <Compile Include="Models\Employee.cs" />
     <Compile Include="Models\Interfaces\ITopWorker.cs" />
     <Compile Include="Models\Interfaces\IWorker.cs" />

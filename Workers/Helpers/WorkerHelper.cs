@@ -2,7 +2,7 @@
 using System.Linq;
 using Workers.Models.Interfaces;
 
-namespace Workers.Helprers
+namespace Workers.Helpers
 {
     /// <summary>
     /// Class for extention any worker action

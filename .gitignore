@@ -1,0 +1,14 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/Workers/.vs/Workers/FileContentIndex
+/Workers/.vs/Workers/v17/TestStore/0/014.testlog
+/Workers/.vs/Workers/v17/.suo
+/Workers/obj/Debug/Workers.csproj.AssemblyReference.cache
+/Workers/.vs/ProjectEvaluation/workers.metadata.v5.2
+/Workers/.vs/ProjectEvaluation/workers.projects.v5.2
+/Workers/.vs/Workers/DesignTimeBuild/.dtbcache.v2
+/Workers/.vs/Workers/v17/.futdcache.v2
+/Workers/.vs/Workers/v17/TestStore/0/014.testlog
+/Workers/.vs/Workers/v17/.suo
